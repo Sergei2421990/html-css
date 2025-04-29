@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #container {
+            background-color: yellowgreen;
+        }
+        span {
+            color: red;
+            display: inline-block;
+            margin-left: 1em;
+        }
+        ul{
+            list-style-type: none;
+            
+        }
+        li{
+            list-style-image: url(icons/unchecked_16.png);
+           ;
+            list-style-position: inside;
+        }
+        li:nth-child(odd){
+            background-color: lightblue
+        }
+        li:nth-child(even){
+            background-color: rgba(93, 128, 139, 0.952)
+        }
+        li.checked{
+            background-color: grey;
+        }
+        .checked{
+            list-style-image: url(icons/checked_16.png);
+            text-decoration: line-through;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <h1>My To Do List</h1>
+        <ul>
+            <li>Hit the gym<span>x</span></li>
+            <li class="checked">Pay bills<span>x</span></li>
+            <li>Meet John<span>x</span></li>
+            <li>Buy eggs<span>x</span></li>
+            <li class="checked">Read a book<span>x</span></li>
+            <li>Organize office<span>x</span></li>
+            <li>Eat dinner<span>x</span></li>
+            <li>Buy apples<span>x</span></li>
+            <li>Meet George<span>x</span></li>
+            <li>Feed the cat<span>x</span></li>
+            <li class="checked">Write a letter<span>x</span></li>
+            <li>Run 1 km<span>x</span></li>
+    </section>
+</body>
+</html>
